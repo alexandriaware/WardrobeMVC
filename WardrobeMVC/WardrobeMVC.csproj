@@ -134,15 +134,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ArmAccessoriesController.cs" />
     <Compile Include="Models\ArmAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Bottom.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\BottomsController.cs" />
+    <Compile Include="Models\HeadAccessoriesController.cs" />
     <Compile Include="Models\HeadAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\NeckAccessoriesController.cs" />
     <Compile Include="Models\NeckAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
@@ -152,9 +156,11 @@
     <Compile Include="Models\Sho.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ShoesController.cs" />
     <Compile Include="Models\Top.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TopsController.cs" />
     <Compile Include="Models\WardrobeDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -224,6 +230,36 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Tops\Create.cshtml" />
+    <Content Include="Views\Tops\Delete.cshtml" />
+    <Content Include="Views\Tops\Details.cshtml" />
+    <Content Include="Views\Tops\Edit.cshtml" />
+    <Content Include="Views\Tops\Index.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\Shoes\Create.cshtml" />
+    <Content Include="Views\Shoes\Delete.cshtml" />
+    <Content Include="Views\Shoes\Details.cshtml" />
+    <Content Include="Views\Shoes\Edit.cshtml" />
+    <Content Include="Views\Shoes\Index.cshtml" />
+    <Content Include="Views\HeadAccessories\Create.cshtml" />
+    <Content Include="Views\HeadAccessories\Delete.cshtml" />
+    <Content Include="Views\HeadAccessories\Details.cshtml" />
+    <Content Include="Views\HeadAccessories\Edit.cshtml" />
+    <Content Include="Views\HeadAccessories\Index.cshtml" />
+    <Content Include="Views\NeckAccessories\Create.cshtml" />
+    <Content Include="Views\NeckAccessories\Delete.cshtml" />
+    <Content Include="Views\NeckAccessories\Details.cshtml" />
+    <Content Include="Views\NeckAccessories\Edit.cshtml" />
+    <Content Include="Views\NeckAccessories\Index.cshtml" />
+    <Content Include="Views\ArmAccessories\Create.cshtml" />
+    <Content Include="Views\ArmAccessories\Delete.cshtml" />
+    <Content Include="Views\ArmAccessories\Details.cshtml" />
+    <Content Include="Views\ArmAccessories\Edit.cshtml" />
+    <Content Include="Views\ArmAccessories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
