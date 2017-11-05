@@ -134,19 +134,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ArmAccessoriesController.cs" />
+    <Compile Include="Controllers\ArmAccessoriesController.cs" />
     <Compile Include="Models\ArmAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Bottom.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\BottomsController.cs" />
-    <Compile Include="Models\HeadAccessoriesController.cs" />
+    <Compile Include="Controllers\BottomsController.cs" />
+    <Compile Include="Controllers\HeadAccessoriesController.cs" />
     <Compile Include="Models\HeadAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NeckAccessoriesController.cs" />
+    <Compile Include="Controllers\NeckAccessoriesController.cs" />
     <Compile Include="Models\NeckAccessory.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
@@ -156,11 +156,11 @@
     <Compile Include="Models\Sho.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ShoesController.cs" />
+    <Compile Include="Controllers\ShoesController.cs" />
     <Compile Include="Models\Top.cs">
       <DependentUpon>WardrobeDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TopsController.cs" />
+    <Compile Include="Controllers\TopsController.cs" />
     <Compile Include="Models\WardrobeDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,6 +181,36 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\AllTerrainBooties.jpg" />
+    <Content Include="Content\Images\background.jpg" />
+    <Content Include="Content\Images\bandana.jpg" />
+    <Content Include="Content\Images\BunHarness.jpg" />
+    <Content Include="Content\Images\BusinessCatTie.jpg" />
+    <Content Include="Content\Images\ButtJewel.jpg" />
+    <Content Include="Content\Images\carousel1.jpg" />
+    <Content Include="Content\Images\carousel2.jpg" />
+    <Content Include="Content\Images\carousel3.jpg" />
+    <Content Include="Content\Images\catHat.jpeg" />
+    <Content Include="Content\Images\ClosetHangers.jpeg" />
+    <Content Include="Content\Images\DoggoNappy.jpg" />
+    <Content Include="Content\Images\DogRainboots.jpg" />
+    <Content Include="Content\Images\FatShirt.jpg" />
+    <Content Include="Content\Images\fluffycoat.jpg" />
+    <Content Include="Content\Images\FormalKitty.jpg" />
+    <Content Include="Content\Images\KittenSweater.jpg" />
+    <Content Include="Content\Images\MonkeyKat.jpg" />
+    <Content Include="Content\Images\NoMudDog.jpg" />
+    <Content Include="Content\Images\OopsCat.jpeg" />
+    <Content Include="Content\Images\PupChucks.jpg" />
+    <Content Include="Content\Images\pupHoodie.jpg" />
+    <Content Include="Content\Images\PupOveralls.jpg" />
+    <Content Include="Content\Images\PupPantyhose.jpg" />
+    <Content Include="Content\Images\PupTie.jpg" />
+    <Content Include="Content\Images\PussInBoots.jpg" />
+    <Content Include="Content\Images\shirtdrawer.jpeg" />
+    <Content Include="Content\Images\SnikHat.jpg" />
+    <Content Include="Content\Images\StitchShirt.jpg" />
+    <Content Include="Content\Images\SweaterWeather.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -245,21 +275,11 @@
     <Content Include="Views\Shoes\Details.cshtml" />
     <Content Include="Views\Shoes\Edit.cshtml" />
     <Content Include="Views\Shoes\Index.cshtml" />
-    <Content Include="Views\HeadAccessories\Create.cshtml" />
-    <Content Include="Views\HeadAccessories\Delete.cshtml" />
-    <Content Include="Views\HeadAccessories\Details.cshtml" />
-    <Content Include="Views\HeadAccessories\Edit.cshtml" />
-    <Content Include="Views\HeadAccessories\Index.cshtml" />
     <Content Include="Views\NeckAccessories\Create.cshtml" />
     <Content Include="Views\NeckAccessories\Delete.cshtml" />
     <Content Include="Views\NeckAccessories\Details.cshtml" />
     <Content Include="Views\NeckAccessories\Edit.cshtml" />
     <Content Include="Views\NeckAccessories\Index.cshtml" />
-    <Content Include="Views\ArmAccessories\Create.cshtml" />
-    <Content Include="Views\ArmAccessories\Delete.cshtml" />
-    <Content Include="Views\ArmAccessories\Details.cshtml" />
-    <Content Include="Views\ArmAccessories\Edit.cshtml" />
-    <Content Include="Views\ArmAccessories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
