@@ -7,64 +7,26 @@
 @*//This is the main landing page for the bottoms category*@
 <h2>Bottoms</h2>
 
-<p>
-    ...
-</p>
+@*loop for each element to show up*@
 
-@*//ROW ONE*@
-<div class="row">
-    <div class="col-md-2"></div> @*//empty column for formatting*@
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-md-4">@*//Empty for formatting*@</div>
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="@Html.DisplayFor(modelItem => item.Photo)" />
+                <h3 class="info">@Html.DisplayFor(modelItem => item.Name)</h3>
+                <p class="info">
+                    @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+
+                </p>
             </div>
         </div>
+        <div class="col-md-4">@*//Empty for formatting*@</div>
     </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2"></div> @*//empty column for formatting*@
-</div>
-
-<div class="row">@*empty row for formatting*@</div>
-
-@*//ROW TWO*@
-<div class="row">
-    <div class="col-md-2"></div> @*//empty column for formatting*@
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2"></div> @*//empty column for formatting*@
-</div>
-
+}
 
 
 

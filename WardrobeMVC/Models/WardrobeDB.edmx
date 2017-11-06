@@ -259,9 +259,9 @@
           <Property Name="TopID" Type="Int32" Nullable="false" />
           <Property Name="BottomID" Type="Int32" Nullable="false" />
           <Property Name="ShoeID" Type="Int32" Nullable="false" />
-          <Property Name="HeadAccessoryID" Type="Int32" Nullable="false" />
+          <Property Name="HeadAccessoryID" Nullable="false" Type="Int32" />
           <Property Name="NeckAccessoryID" Type="Int32" Nullable="false" />
-          <Property Name="ArmAccessoryID" Type="Int32" Nullable="false" />
+          <Property Name="ArmAccessoryID" Nullable="false" Type="Int32" />
           <NavigationProperty Name="ArmAccessory" Relationship="Self.FK_Outfits_ArmAccessory" FromRole="Outfits" ToRole="ArmAccessory" />
           <NavigationProperty Name="Bottom" Relationship="Self.FK_Outfits_Bottoms" FromRole="Outfits" ToRole="Bottoms" />
           <NavigationProperty Name="HeadAccessory" Relationship="Self.FK_Outfits_HeadAccessory" FromRole="Outfits" ToRole="HeadAccessory" />
