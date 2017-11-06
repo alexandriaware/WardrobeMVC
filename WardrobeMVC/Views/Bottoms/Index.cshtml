@@ -5,7 +5,7 @@
 }
 
 @*//This is the main landing page for the bottoms category*@
-<h2>Bottoms</h2>
+<p class="head">Bottoms</p>
 
 @*loop for each element to show up*@
 
@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <div class="thumbnail">
                 <img src="@Html.DisplayFor(modelItem => item.Photo)" />
-                <h3 class="info">@Html.DisplayFor(modelItem => item.Name)</h3>
+                <h3 class="info" style="font-weight:800">@Html.DisplayFor(modelItem => item.Name)</h3>
                 <p class="info">
                     @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
                     @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })

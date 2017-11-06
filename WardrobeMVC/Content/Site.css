@@ -1,11 +1,21 @@
-﻿body {
+﻿/*font-family: 'Poiret One', cursive;
+font-family: 'Limelight', cursive;
+*/
+
+body {
     padding: 50px 0px 0px 0px;
     background-image: url('Images/background.jpg');
+    font-family: 'Poiret One', cursive;
+    font-weight:600;
 }
 
-.body-content {
-
+.head {
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    font-weight:800;
+    text-align: center;
 }
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -19,6 +29,10 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar-header, .footer{
+    font-family: 'Limelight', cursive;
 }
 
 /*Carousel*/

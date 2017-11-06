@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Poiret+One" rel="stylesheet">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -10,10 +11,10 @@
 @*//THIS IS THE STUFF COMMON TO EVERY PAGE*@
 <body>
     @*//Navbar - it works!*@
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="padding-left: 15px">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">My Closet Helper</a>
+                <a class="navbar-brand" href="#">My Pet's Closet</a>
             </div>
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -36,7 +37,7 @@
 
 
     @*//Body bit*@
-    <div class="container-fluid body-content">
+    <div class="body-content">
         @RenderBody()
 
         <div class="row">@*empty for formatting*@</div>

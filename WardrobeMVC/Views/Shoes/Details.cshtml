@@ -7,58 +7,13 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Sho</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    <h4>Booties</h4>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
+    <p>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)</p>
+    <p>@Html.DisplayNameFor(model => model.Type) : @Html.DisplayFor(model => model.Type)</p>
+    <p>@Html.DisplayNameFor(model => model.Color) : @Html.DisplayFor(model => model.Color)</p>
+    <p>@Html.DisplayNameFor(model => model.Season) : @Html.DisplayFor(model => model.Season)</p>
+    <p>@Html.DisplayNameFor(model => model.Occasion) : @Html.DisplayFor(model => model.Occasion)</p>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) |
